@@ -37,5 +37,9 @@ USER root
 VOLUME /home/$USERNAME/.ssh
 VOLUME /etc/ssh
 
+RUN git clone https://github.com/TashaSkyUp/HelperFunctions.git
+RUN cd HelperFunctions && python3 setup.py install
+
 # Run entrypoint
 CMD ["/entrypoint.sh"]
+

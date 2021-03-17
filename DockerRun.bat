@@ -1,0 +1,1 @@
+docker run -d -p 2222:22 -v c:\container:/host --name u3s1m3python-ssh local/u3s1m3python-ssh
